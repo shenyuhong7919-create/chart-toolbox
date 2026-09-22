@@ -27,6 +27,7 @@
 
 ## 怎么用
 
+点击链接预览：https://shenyuhong7919-create.github.io/chart-toolbox/
 下载 `index.html`，双击用浏览器打开即可。
 
 ## 说明
