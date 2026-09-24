@@ -7,6 +7,8 @@
 
 ## 打开哪个？
 
+**最新版（2026-09-24）**
+
 | 文件 | 定位 | 大小 | 链接 |
 |---|---|---|---|
 | `index.html` | **完整版（旗舰）**：图鉴（SE / Plus / Pro）+ 创作台，全功能 | 2.41 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/) |
@@ -14,6 +16,14 @@
 | `se.html` | **极简版**：只保留 SE 模式，打开即用 | 1.46 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/se.html) |
 
 > 网络较慢时建议先用 `lite.html` 或 `se.html`，体积小 40%，加载更快。
+
+**历史版本**
+
+| 文件 | 定位 | 大小 | 链接 |
+|---|---|---|---|
+| `v1.html` | 第一版（2026-09-22 素材库版）：仅图鉴，无创作台 | 1.24 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/v1.html) |
+
+完整改动见 [更新记录 CHANGELOG.md](CHANGELOG.md)。
 
 ## 它解决什么问题
 
