@@ -42,6 +42,8 @@ body{
   border:1px solid var(--hair);border-radius:999px;padding:3px 11px}
 h2{font-size:var(--fs-h2);font-weight:650;margin:38px 0 14px;letter-spacing:-.005em}
 h2 .sub{font-size:var(--fs-xs);font-weight:400;color:var(--ink3);margin-left:8px;letter-spacing:0}
+
+/* ── 主推版本卡 ── */
 .v{display:block;position:relative;background:var(--card);border:1px solid var(--hair);
   border-radius:14px;padding:20px 22px;margin-bottom:14px;text-decoration:none;color:inherit;
   transition:border-color .16s,box-shadow .16s,transform .16s}
@@ -65,6 +67,21 @@ h2 .sub{font-size:var(--fs-xs);font-weight:400;color:var(--ink3);margin-left:8px
   font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   border-top:1px dashed var(--hair);padding-top:10px;word-break:break-all}
 .path b{color:var(--ink2);font-weight:600;font-family:inherit}
+
+/* ── 存档版紧凑列表 ── */
+.list{background:var(--card);border:1px solid var(--hair);border-radius:14px;overflow:hidden}
+.row{display:flex;align-items:center;gap:10px;padding:14px 20px;text-decoration:none;color:inherit;
+  border-top:1px solid var(--hair);transition:background .14s}
+.row:first-child{border-top:0}
+.row:hover{background:#FBFAF6}
+.rname{font-weight:600;font-size:var(--fs-sm);color:var(--ink)}
+.rtag{font-size:var(--fs-xs);font-weight:600;color:var(--ink3);background:var(--tint);
+  border:1px solid var(--hair);border-radius:999px;padding:1px 8px}
+.rdesc{font-size:var(--fs-xs);color:var(--ink3);flex:1;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rsize{font-size:var(--fs-xs);color:var(--ink3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.rgo{font-size:var(--fs-xs);color:var(--acc);white-space:nowrap;font-weight:600}
+
 .note{background:#FDFAF2;border:1px solid #EBDFC0;border-radius:12px;padding:15px 18px;
   font-size:var(--fs-sm);color:#6B5A33;margin:26px 0 0}
 .note b{color:#4E4022}
@@ -77,9 +94,11 @@ footer a:hover{border-bottom-color:var(--acc)}
 @media (max-width:640px){
   :root{--fs-hero:36px;--fs-h1:20px;--fs-h2:16px}
   body{padding:0 15px 48px}
-  .v{padding:17px 17px;border-radius:12px}
+  .v{padding:17px;border-radius:12px}
   .size{margin-left:0;width:100%}
   .rule{margin-bottom:26px}
+  .rdesc{display:none}
+  .row{padding:13px 15px;flex-wrap:wrap}
 }
 @media print{body{background:#fff}.v{box-shadow:none;transform:none}}
 </style>
@@ -103,23 +122,23 @@ footer a:hover{border-bottom-color:var(--acc)}
     <span class="pill">自动生成提示词</span>
   </div>
 
-  <h2>最新版<span class="sub">2026-09-24</span></h2>
+  <h2>最新版 V2.1<span class="sub">2026-09-24</span></h2>
 
-  <a class="v primary" href="%E5%B7%A5%E4%BD%9C%E5%8F%B0V2.0Studio.html">
+  <a class="v primary" href="v2.1/%E5%B7%A5%E4%BD%9C%E5%8F%B0V2.1Studio.html">
     <div class="vhead">
-      <span class="vname">完整版 · 工作台 V2.0 Studio</span>
+      <span class="vname">完整版 · 工作台 V2.1 Studio</span>
       <span class="tag new">最新 · 推荐</span>
-      <span class="size">2.41 MB</span>
+      <span class="size">2.42 MB</span>
     </div>
-    <p class="vdesc">功能最全的旗舰版。<b>图鉴</b>（SE / Plus / Pro 三档）与<b>创作台</b>合并在同一个文件里，顶部一键切换。</p>
+    <p class="vdesc">功能最全的旗舰版。<b>SE / Plus / Pro / Studio 四档视图合并进同一个文件</b>，顶部吸顶条一键切换，Studio 与前三档完全平级。</p>
     <div class="feat">
-      <span>图鉴 + 创作台</span><span>20 款设计风格</span><span>6 套色系</span>
-      <span>1280×720 汇报版式</span><span>导出 PDF</span><span>「夜航」深色主题</span>
+      <span>四档视图同文件</span><span>创作台 Studio</span><span>20 款设计风格</span>
+      <span>6 套色系</span><span>1280×720 汇报版式</span><span>导出 PDF</span>
     </div>
-    <div class="path"><b>文件：</b>工作台V2.0Studio.html</div>
+    <div class="path"><b>文件：</b>v2.1/工作台V2.1Studio.html</div>
   </a>
 
-  <a class="v" href="lite.html">
+  <a class="v" href="v2.1/lite.html">
     <div class="vhead">
       <span class="vname">三合一版</span>
       <span class="tag lite">轻量</span>
@@ -129,10 +148,10 @@ footer a:hover{border-bottom-color:var(--acc)}
     <div class="feat">
       <span>仅图鉴</span><span>SE / Plus / Pro</span><span>6 套色系</span><span>体积小 40%</span>
     </div>
-    <div class="path"><b>文件：</b>lite.html</div>
+    <div class="path"><b>文件：</b>v2.1/lite.html</div>
   </a>
 
-  <a class="v" href="se.html">
+  <a class="v" href="v2.1/se.html">
     <div class="vhead">
       <span class="vname">极简版 SE</span>
       <span class="tag lite">最轻</span>
@@ -142,27 +161,50 @@ footer a:hover{border-bottom-color:var(--acc)}
     <div class="feat">
       <span>仅 SE 模式</span><span>零切换</span><span>打开即用</span>
     </div>
-    <div class="path"><b>文件：</b>se.html</div>
+    <div class="path"><b>文件：</b>v2.1/se.html</div>
   </a>
 
-  <h2>历史版本<span class="sub">保留存档，独立网址，不会被新版覆盖</span></h2>
+  <h2>上一版 V2.0<span class="sub">保留存档，独立网址，不会被新版覆盖</span></h2>
 
-  <a class="v" href="v1.html">
-    <div class="vhead">
-      <span class="vname">第一版</span>
-      <span class="tag old">历史存档</span>
-      <span class="size">1.24 MB</span>
-    </div>
-    <p class="vdesc">2026-09-22 首次发布。只有<b>图鉴</b>、没有创作台；含入门 / 进阶双模式与 6 套色系。</p>
-    <div class="feat">
-      <span>仅图鉴</span><span>双模式</span><span>6 套色系</span><span>4 档尺寸自适应</span>
-    </div>
-    <div class="path"><b>文件：</b>v1.html</div>
-  </a>
+  <div class="list">
+    <a class="row" href="%E5%B7%A5%E4%BD%9C%E5%8F%B0V2.0Studio.html">
+      <span class="rname">完整版 · 工作台 V2.0 Studio</span>
+      <span class="rtag">V2.0</span>
+      <span class="rdesc">图鉴与创作台两套工作区</span>
+      <span class="rsize">2.41 MB</span>
+      <span class="rgo">打开 →</span>
+    </a>
+    <a class="row" href="lite.html">
+      <span class="rname">三合一版</span>
+      <span class="rtag">V2.0</span>
+      <span class="rdesc">仅图鉴，三档切换</span>
+      <span class="rsize">1.46 MB</span>
+      <span class="rgo">打开 →</span>
+    </a>
+    <a class="row" href="se.html">
+      <span class="rname">极简版 SE</span>
+      <span class="rtag">V2.0</span>
+      <span class="rdesc">只保留 SE 模式</span>
+      <span class="rsize">1.46 MB</span>
+      <span class="rgo">打开 →</span>
+    </a>
+  </div>
+
+  <h2>历史存档 V1<span class="sub">2026-09-22 首次发布</span></h2>
+
+  <div class="list">
+    <a class="row" href="v1.html">
+      <span class="rname">第一版</span>
+      <span class="rtag">V1</span>
+      <span class="rdesc">仅图鉴，入门 / 进阶双模式</span>
+      <span class="rsize">1.24 MB</span>
+      <span class="rgo">打开 →</span>
+    </a>
+  </div>
 
   <div class="note warn">
     <b>网络较慢时，建议先开「三合一版」或「极简版 SE」。</b><br>
-    完整版有 2.41 MB，是轻量版的 1.6 倍，网络状况不好时会明显变慢，手机上尤其明显。
+    完整版有 2.42 MB，是轻量版的 1.6 倍，网络状况不好时会明显变慢，手机上尤其明显。
   </div>
 
   <div class="note">
@@ -173,7 +215,7 @@ footer a:hover{border-bottom-color:var(--acc)}
   <footer>
     <div>页面内所有数值均为演示用<b>虚构数据</b>，与任何真实机构、个人无关。</div>
     <div>图表引擎等资源全部内联，单文件离线可用 · 建议使用最新版 Chrome / Edge / Safari。</div>
-    <div>完整改动见 <a href="CHANGELOG.md">更新记录</a> · <a href="https://github.com/shenyuhong7919-create/chart-toolbox">项目仓库</a></div>
+    <div>完整改动见 <a href="CHANGELOG.md">更新记录</a> · <a href="v2.1/%E6%9B%B4%E6%96%B0%E8%AF%B4%E6%98%8E.md">V2.1 更新说明</a> · <a href="https://github.com/shenyuhong7919-create/chart-toolbox">项目仓库</a></div>
     <div>最后更新：2026-09-24</div>
   </footer>
 
