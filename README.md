@@ -7,11 +7,14 @@
 
 ## 打开哪个？
 
+打开 <https://shenyuhong7919-create.github.io/chart-toolbox/> 会看到一个**版本索引页**，
+上面列出了全部版本和对应链接，按需挑一个即可。
+
 **最新版（2026-09-24）**
 
 | 文件 | 定位 | 大小 | 链接 |
 |---|---|---|---|
-| `index.html` | **完整版（旗舰）**：图鉴（SE / Plus / Pro）+ 创作台，全功能 | 2.41 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/) |
+| `工作台V2.0Studio.html` | **完整版（旗舰）**：图鉴（SE / Plus / Pro）+ 创作台，全功能 | 2.41 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/%E5%B7%A5%E4%BD%9C%E5%8F%B0V2.0Studio.html) |
 | `lite.html` | **三合一版（轻量）**：仅图鉴，SE / Plus / Pro 三档切换 | 1.46 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/lite.html) |
 | `se.html` | **极简版**：只保留 SE 模式，打开即用 | 1.46 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/se.html) |
 
@@ -22,6 +25,8 @@
 | 文件 | 定位 | 大小 | 链接 |
 |---|---|---|---|
 | `v1.html` | 第一版（2026-09-22 素材库版）：仅图鉴，无创作台 | 1.24 MB | [打开](https://shenyuhong7919-create.github.io/chart-toolbox/v1.html) |
+
+> 各版本是**独立文件、独立网址**，互不覆盖。新版只增不改，旧版永久可访问。
 
 完整改动见 [更新记录 CHANGELOG.md](CHANGELOG.md)。
 
